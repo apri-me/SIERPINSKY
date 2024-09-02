@@ -1,8 +1,9 @@
 import pygame
 import pygame_menu
-from sierpinsky import start_sier_curve
-from mandelbrot import start_mandelbrot_sets
-from ball_anim import start_ball_animation
+#
+from sections import start_ball_animation, start_mandelbrot_sets, start_sier_curve
+
+
 
 THEME = pygame_menu.themes.THEME_SOLARIZED
 
@@ -15,7 +16,7 @@ MANDELBROT_ITERATIONS_NUM = 30
 MANDELBROT_COLOR_PALET_MODE = 1
 
 
-def select_mode(value, mode):
+def select_mode(_, mode):
     global MODE
     MODE = mode
 
